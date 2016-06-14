@@ -1,0 +1,9 @@
+{
+  "globalDependencies": {
+    "bluebird": "github:DefinitelyTyped/DefinitelyTyped/bluebird/bluebird.d.ts#dd328830dddffbe19e9addd7cf8532cbd3600816",
+    "form-data": "github:DefinitelyTyped/DefinitelyTyped/form-data/form-data.d.ts#56295f5058cac7ae458540423c50ac2dcf9fc711",
+    "node": "registry:dt/node#6.0.0+20160524002506",
+    "request": "github:DefinitelyTyped/DefinitelyTyped/request/request.d.ts#5f9cf2d84c5b8e1df2f51202900ef081ea2b0f16"
+  },
+  "dependencies": {}
+}

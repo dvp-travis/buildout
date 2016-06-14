@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"declaration": true,
+		"target": "es5",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"sourceMap": true,
+		"removeComments": true,
+		"noImplicitAny": true,
+		"rootDir": "src",
+		"outDir": "build"
+	},
+	"exclude": [
+		"build",
+		"node_modules",
+		"typings/globals",
+		"typings/modules"
+	]
+}
