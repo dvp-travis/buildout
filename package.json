@@ -17,6 +17,10 @@
 	"typings": "build/app.d.ts",
 	"author": "Travis Hill <travis@developrise.com> (http://developrise.com)",
 	"license": "ISC",
+	"keywords": [
+		"real estate",
+		"commercial real estate"
+	],
 	"dependencies": {
 		"bluebird": "^3.4.0",
 		"request": "^2.72.0"
