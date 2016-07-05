@@ -28,6 +28,15 @@ export interface Property extends Model {
 	you_tube_url?: string;
 	mls_id?: string;
 	building_size_sf: number;
+	ceiling_height_f?: number;
+	renovated?: number;
+	parking_ratio?: number;
+	number_of_parking_spaces?: number;
+	utilities_description?: string;
+	additional_property_subtype_ids?: PropertySubtype[];
+	traffic_count?: number;
+	traffic_count_street?: string;
+	traffic_count_frontage?: number;
 	number_of_units?: number;
 	number_of_floors?: number;
 	year_built?: number;

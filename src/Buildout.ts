@@ -5,7 +5,7 @@ import {Parameters} from './Parameters';
 import {Model} from './Model';
 import {Response} from './Response';
 
-export abstract class Buildout {
+export abstract class Buildout { 
 
 	private url: string;
 

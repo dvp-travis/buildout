@@ -9,11 +9,14 @@ export enum PropertyType {
 }
 
 export enum PropertySubtype {
+	// Office
 	'Office Building' = 101,
 	'Creative/Loft',
 	'Executive Suites',
 	Medical,
 	'Institutional/Governmental',
+
+	// Retail
 	'Street Retail' = 201,
 	'Strip Center',
 	'Free Standing Building',
@@ -28,6 +31,8 @@ export enum PropertySubtype {
 	'Theme/Festival Center',
 	Restaurant,
 	'Post Office',
+
+	// Industrial
 	Manufacturing = 301,
 	'Warehouse/Distribution',
 	'Flex Space',
@@ -36,10 +41,17 @@ export enum PropertySubtype {
 	'Office Showroom',
 	'Truck Terminal/Hub/Transit',
 	'Self Storage',
+
+	// Land
 	Office = 501,
 	Retail,
+	'Retail-Pad',
+	Industrial,
+	Residential,
 	Multifamily,
 	Other,
+
+	// Multi-Family
 	'High-Rise' = 601,
 	'Mid-Rise',
 	'Low-Rise/Garden',
@@ -47,10 +59,14 @@ export enum PropertySubtype {
 	'Mobile Home Park',
 	'Senior Living',
 	'Skilled Nursing',
+
+	// Special Purpose
 	School = 701,
 	Marina,
 	Other703, // In the Buildout API documentation, there are two 'Other' values
 	'Golf Course',
+
+	// Hospitality
 	'Full Service' = 801,
 	'Limited Service',
 	'Select Service',
