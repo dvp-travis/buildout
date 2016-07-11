@@ -53,7 +53,7 @@ export abstract class Buildout {
 			method: 'POST',
 			url: url,
 			json: true,
-			form: form,
+			body: form,
 		};
 
 		return this.doRequest(options);
@@ -66,7 +66,8 @@ export abstract class Buildout {
 		let options: request.Options = {
 			method: 'PUT',
 			url: url,
-			form: form,
+			json: true,
+			body: form,
 		};
 
 		return this.doRequest(options);
