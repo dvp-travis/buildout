@@ -65,6 +65,7 @@ export enum PropertySubtype {
 	Marina,
 	Other703, // In the Buildout API documentation, there are two 'Other' values
 	'Golf Course',
+	'Church',
 
 	// Hospitality
 	'Full Service' = 801,
