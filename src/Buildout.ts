@@ -20,11 +20,15 @@ export abstract class Buildout {
 					return reject(error);
 				}
 
+				if (response.statusCode >= 400) {
+					return reject(response.headers.status + ': ' + (typeof body == 'object' ? JSON.stringify(body) : body));
+				}
+
 				if (body == ' ') {
 					return resolve();
 				}
 
-				resolve(body);
+				return resolve(body);
 			});
 		});
 	}
