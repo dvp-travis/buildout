@@ -14,7 +14,6 @@ export class PropertyPhoto extends Buildout {
 	}
 
 	public add(propertyId: number, photo: Photo): Promise<Photo> {
-		console.log(propertyId);
 		return this._post(`${Property.PAGE}/${propertyId}/${PropertyPhoto.PAGE}.json`, 'photo', photo)
 			.then((response: PhotoResponse) => response.photo);
 	}
