@@ -24,6 +24,7 @@ export interface Property extends Model {
 	property_type_id: PropertyType;
 	property_subtype_id: PropertySubtype;
 	zoning?: string;
+	apn?: string;
 	lot_size_acres?: number;
 	you_tube_url?: string;
 	mls_id?: string;
@@ -37,6 +38,7 @@ export interface Property extends Model {
 	traffic_count?: number;
 	traffic_count_street?: string;
 	traffic_count_frontage?: number;
+	site_description?: string;  // surrounding businesses
 	number_of_units?: number;
 	number_of_floors?: number;
 	year_built?: number;
