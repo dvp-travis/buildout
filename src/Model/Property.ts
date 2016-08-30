@@ -58,6 +58,7 @@ export interface Property extends Model {
 	tenancy_id?: Tenancy;
 	cap_rate_pct?: number;
 	net_operating_income?: number;
+	land_legal_description?: string;
 	lease?: boolean;
 	lease_title?: string;
 	lease_description?: string;
