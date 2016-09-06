@@ -1,5 +1,5 @@
 {
-  "name": "buildout",
+  "name": "dvp-buildout",
   "version": "2.5.0",
   "description": "Buildout Commercial Real Estate NodeJS SDK (https://buildout.com/)",
   "main": "build/app.js",
@@ -14,8 +14,11 @@
     "type": "git",
     "url": "ssh://git@stash.developrise.com:7999/dlib/buildout.git"
   },
+  "publishConfig": {
+    "registry": "http://npm.developrise.com"
+  },
   "typings": "build/app.d.ts",
-  "author": "Travis Hill <travis@developrise.com> (http://developrise.com)",
+  "author": "Developrise LLC",
   "license": "ISC",
   "keywords": [
     "real estate",
