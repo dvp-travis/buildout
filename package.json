@@ -1,6 +1,6 @@
 {
-  "name": "dvp-buildout",
-  "version": "2.5.0",
+  "name": "buildout",
+  "version": "2.5.1",
   "description": "Buildout Commercial Real Estate NodeJS SDK (https://buildout.com/)",
   "main": "build/app.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@stash.developrise.com:7999/dlib/buildout.git"
+    "url": "https://github.com/dvp-travis/buildout"
   },
   "publishConfig": {
     "registry": "http://npm.developrise.com"
