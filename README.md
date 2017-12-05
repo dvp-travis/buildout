@@ -33,3 +33,48 @@ Here is a list of available methods:
 - `add(propertyId, photo)`
 - `update(propertyId, photoId, photo)`
 - `remove(propertyId, photoId)`
+
+**Sample Usage:**
+
+Fetch a property:
+
+    import {PropertySDK, Property} from 'buildout';
+    
+    const propertySdk = new PropertySDK('http://buildout.com/api/v1', '<your api key>');
+    const promise = propertySdk.get(1);
+    promise.then((property: Property) => {
+      console.log(property);
+    });
+
+Create a lease space:
+
+    import {LeaseSpace, DealStatus, LeaseType, LeaseSpaceSDK} from 'buildout';
+    
+    const leaseSpace: LeaseSpace = {
+      property_id: 1,
+      deal_status_id: DealStatus.Closed,
+      lease_type_id: LeaseType['Modified Gross'],
+      // ...
+    };
+    const leaseSpaceSdk = new LeaseSpaceSDK('http://buildout.com/api/v1', '<your api key>');
+    const promise = leaseSpaceSdk.create(leaseSpace);
+    promise.then((createdLeaseSpace: LeaseSpace) => {
+      console.log(createdLeaseSpace.id);
+    });
+
+Update a property:
+
+    import {Property, PropertySDK} from 'buildout';
+
+    const property: Property = {
+      id: 1,
+      broker_id: 2,
+      address: '123 Main St.',
+      // ...
+    };
+    
+    const propertySdk = new PropertySDK('http://buildout.com/api/v1', '<your api key>');
+    const promise = propertySdk.update(property.id, property);
+    promise.then(() => {
+      console.log('Update finished');
+    });
