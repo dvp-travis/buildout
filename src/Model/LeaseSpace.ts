@@ -26,4 +26,5 @@ export interface LeaseSpace extends Model {
 	date_available?: Date;
 	floor_plan_url?: string;
 	photos?: Photo[];
+	lease_type_label_override?: string;
 }
